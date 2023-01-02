@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <script src="assets/js/script.js" defer></script>
+    <title>Alura Challenge - Criptografador</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="logo"><img src="./assets/imgs/Logo.svg" alt="Logo da Alura" /></h1>
+
+      <div id="inputText">
+        <ul>
+          <li>
+            <img src="./assets/imgs/mockup.svg" alt="Cara com um lupa" />
+            <p class="primeiroParagrafo">Nenhuma mensagem encontrada</p>
+            <p class="segundoParagrafo">
+              Digite um texto que você deseja criptografar ou descriptografar.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <textarea
+          id="textArea"
+          placeholder="Digite seu texto..."
+          spellcheck="false"
+        ></textarea>
+      </div>
+      <div id="info">
+        <img src="./assets/imgs/attention.svg" alt="" />
+        <p>Apenas letras minúsculas e sem acento.</p>
+      </div>
+      <div id="button">
+        <button id="criptografa" onclick="cripto()">Criptografar</button>
+        <button id="descriptografa" onclick="descripto()">
+          Descriptografar
+        </button>
+      </div>
+      <div id="result">
+        <textarea id="outputText"></textarea>
+        <button id="copiar" onclick="copy()">Copiar</button>
+      </div>
+    </main>
+
+    <footer>
+      <div >
+        <p id="copy" style="font-size: 24px; text-transform: uppercase;">&copy; Developed by MatheusN5F - 2022 </p>
+      </div>
+      <div id="social-mobile--body">
+        <div id="social-mobile">
+            <a class="rede" href="https://github.com/MatheusN5F" target="_blank">
+                <img id="gi" src="https://imgs.search.brave.com/ikcrhKQN5Ni60H22fPzkPeFZsD0oUqDTRZdQputksE8/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvZ2l0aHViL2dp/dGh1Yl9QTkc0MC5w/bmc" alt="github" width="19">
+            </a>
+            <a class="rede" href="https://www.linkedin.com/in/matheus-agusto-dev/" target="_blank">
+                <img id='lin' src="https://imgs.search.brave.com/IQj7XKPfcvtBGOVI2u-0DVIIvOeDtEjfj1jibbw72Cw/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9zZ3Vy/dS5vcmcvd3AtY29u/dGVudC91cGxvYWRz/LzIwMTgvMDIvbGlu/a2VkaW4tcG5nLWxp/bmtlZGluLWljb24t/MTYwMC5wbmc" alt="Linkdin" width="19">
+            </a>
+        </div>
+    </footer>
+  </body>
+</html>
